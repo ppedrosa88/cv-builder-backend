@@ -95,16 +95,22 @@ Aquí están los endpoints disponibles en la API:
   - **Descripción**: Obtiene todos los usuarios.
   - **Respuesta**: Lista de usuarios.
 
-- POST /auth/ - **Descripción**: Crea un nuevo usuario. - **Cuerpo de la Solicitud**:
-  `    { 
-		 "name": "Nombre", 
-		 "surname": "Apellido", 
-		 "email": "correo@example.com", 
-		 "password": "contraseña", 
-		 "linkedin": "https://www.linkedin.com/in/usuario", 
-		 "github": "https://github.com/usuario" 
-	}
-   `
+- POST /auth/
+
+  - **Descripción**: Crea un nuevo usuario.
+  - **Cuerpo de la Solicitud**:
+
+  ```
+  {
+  	 "name": "Nombre",
+  	 "surname": "Apellido",
+  	 "email": "correo@example.com",
+  	 "password": "contraseña",
+  	 "linkedin": "https://www.linkedin.com/in/usuario",
+  	 "github": "https://github.com/usuario"
+  }
+  ```
+
   No siendo necesarios los campos de linkedin y github.
 
 - **GET /auth/**
